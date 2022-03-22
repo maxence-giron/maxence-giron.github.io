@@ -198,6 +198,10 @@ li a:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.barre-gauche .langues .langue .toeic {
+    margin-left: 15px;
+}
+
 .barre-gauche .langues-list {
     margin-bottom: 0;
 }
