@@ -2,10 +2,17 @@
 <html lang="fr">
 
 <head>
-    <link rel="icon" type="image/png" href="https://maxhwk.github.io/public/assets/img/logo_mg.png" />
-    <title>Maxence GIRON | Portfolio</title>
-    <meta charset="utf-7">
-    <script src="https://kit.fontawesome.com/38d5120454.js" crossorigin="anonymous"></script>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="canonical" href="https://maxhwk.github.io/">
+    <title>Développeur Web Luxembourg | Portfolio Maxence GIRON</title>
+    <meta name="og:title" content="Développeur Web Luxembourg | Portfolio Maxence GIRON">
+    <meta name="description" content="Jeune Développeur Web Front-End basé au Luxembourg, je suis perpétuellement à la recherche de nouveaux défis afin de découvrir et d'apprendre de nouvelles technologies tout en m'amusant.">
+    <meta name="og:description" content="Jeune Développeur Web Front-End basé au Luxembourg, je suis perpétuellement à la recherche de nouveaux défis afin de découvrir et d'apprendre de nouvelles technologies tout en m'amusant.">
+    <meta name="google-site-verification" content="WHeLuhd2oHScPhGg8eViiaQCUB1BPwnns6pd2yWQim4" />
+     
+    <link rel="icon" type="image/png" href="./public/assets/img/logo_mg.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="public/assets/css/main.css">
     <link rel="stylesheet" href="public/assets/sass/slider.css">
@@ -15,12 +22,12 @@
     <div class="feuille">
         <div class="barre-gauche">
             <div class="profil">
-                <img class="photo_profil" src="https://maxhwk.github.io/public/assets/img/photo_cercle.jpg" alt="" />
+                <img class="photo_profil" src="./public/assets/img/photo_cercle.jpg" alt="" />
                 <h1 class="prenom">Maxence</h1>
                 <h1 class="nom">GIRON</h1>
                 <h3 class="descrip">Développeur Web Front-End</h3>
                 <h3 class="descrip">UX / UI Designer</h3>
-                <button class="btn-cv" onClick="Javascript:window.open('https://maxhwk.github.io/public/assets/doc/CV_GIRON_Maxence.pdf');"><i class="fas fa-file-pdf fa-shake" style="--fa-animation-duration: 5s;"></i> <b>Mon Curriculum Vitae</b></button>
+                <button class="btn-cv" onClick="Javascript:window.open('./public/assets/doc/CV_GIRON_Maxence.pdf');"><i class="far fa-file-pdf fa-shake" style="--fa-animation-duration: 5s;"></i> <b>Mon Curriculum Vitae</b></button>
             </div>
 
             <div class="contact_block">
@@ -191,6 +198,26 @@
                     <h2 class="titre-sous-section-prj"> Développement Web & Mobile <i class="fab fa-rebel fa-spin" style="--fa-animation-duration: 5s;"></i> </h2>
 
                     <div class="article">
+                        <a onclick="document.getElementById('suite31').style.display='block';" style="cursor: pointer;">
+                            <span class="projet-titre"> Netflix Clone </span>
+                            <i class="fas fa-chevron-circle-down"></i>
+                        </a>
+                        <a onclick="document.getElementById('suite31').style.display='none';" style="cursor: pointer;">
+                            <i class="fas fa-chevron-circle-up"></i> <br>
+                        </a>
+                        <span><b>Objectif du projet :</b> Création d'un clone du site de Netflix à l'aide du Framework React.</span> <br> <br>
+                        <div class="suites" id="suite31">
+                            <img class="grande-img" src="./public/assets/img/netflix.png" alt="" /> <br> <br>
+                            <span><b>Technologies utilisées :</b> React, API, Git</span> <br> <br>
+                            <span><b>Compétences visées :</b> S'améliorer sur le Framework React dans la réalisation d'un projet de plus grande envergure.</span> <br> <br>
+                            <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
+                            <span><b><i class="fa fa-hourglass-half"></i> Durée :</b> 6 semaines</span> <br>
+                            <span><b><i class="fas fa-edit"></i> Note obtenue :</b> _ /20</span> <br>
+                            <span><a href="https://github.com/MaxHwK/react-netflix-clone-course" target="_blank" class="prj-github"> <i class="fab fa-github"></i> <b>Accéder au Projet</b> </a></span>
+                        </div>
+                    </div>
+
+                    <div class="article">
                         <a onclick="document.getElementById('suite30').style.display='block';" style="cursor: pointer;">
                             <span class="projet-titre"> Procost </span>
                             <i class="fas fa-chevron-circle-down"></i>
@@ -200,7 +227,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Développer un site de gestion d'entreprise avec tableau de bord intégré à l'aide du Framework Symfony.</span> <br> <br>
                         <div class="suites" id="suite30">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/procost.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/procost.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Symfony, MySQL, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre les différents aspects du Framework Symfony dans la réalisation d'un site de gestion d'entreprise (employés / métiers / projets).</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -220,7 +247,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Développer une application mobile de gestion de tâches à l'aide du Framework Flutter.</span> <br> <br>
                         <div class="suites" id="suite29">
-                            <img class="mobile-img" src="https://maxhwk.github.io/public/assets/img/flutter_taches.png" alt="" /> <br> <br>
+                            <img class="mobile-img" src="./public/assets/img/flutter_taches.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Flutter, Firebase</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre les différents aspects du Framework Flutter dans la réalisation d'une application mobile moderne et dynamique.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -240,7 +267,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Développer un site e-commerce fictif de vente de chaussures à l'aide du Framework Symfony.</span> <br> <br>
                         <div class="suites" id="suite28">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/shoefony.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/shoefony.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Symfony, MySQL, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre les différents aspects du Framework Symfony dans la réalisation d'un site e-commerce fictif aux allures réalistes.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -260,12 +287,12 @@
                         </a>
                         <span><b>Objectif du projet :</b> Réalisation d'une To Do List avec toutes les fonctionnalités de base à l'aide du Framework React.</span> <br> <br>
                         <div class="suites" id="suite27">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/todo_list.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/todo_list.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> React, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à utiliser le Framework React ainsi que toutes ses spécificités dans la réalisation d'une To Do List moderne faisant appel à des librairies (drag and drop).</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
                             <span><b><i class="fa fa-hourglass-half"></i> Durée :</b> 3 semaines</span> <br>
-                            <span><b><i class="fas fa-edit"></i> Note obtenue :</b> _ /20</span> <br>
+                            <span><b><i class="fas fa-edit"></i> Note obtenue :</b> 15/20</span> <br>
                             <span><a href="https://github.com/MaxHwK/react-course-1" target="_blank" class="prj-github"> <i class="fab fa-github"></i> <b>Accéder au Projet</b> </a></span>
                         </div>
                     </div>
@@ -280,7 +307,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Développer un site web dynamique permettant de gérer des Footballers à l'aide du Framework Ionic.</span> <br> <br>
                         <div class="suites" id="suite26">
-                            <img class="mobile-img" src="https://maxhwk.github.io/public/assets/img/ionic_football.png" alt="" /> <br> <br>
+                            <img class="mobile-img" src="./public/assets/img/ionic_football.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Ionic, Firebase</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à utiliser le Framework Ionic dans la réalisation d'un petit projet ludique sur le thème du Football.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -300,7 +327,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Développer un site web dynamique permettant de gérer des Footballers à l'aide du Framework Angular.</span> <br> <br>
                         <div class="suites" id="suite25">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/angular_football.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/angular_football.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Angular, Firebase</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à utiliser le Framework Angular dans la réalisation d'un petit projet ludique sur le thème du Football.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -320,7 +347,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Réalisation de la partie Front Office du Quizz permettant de lancer une partie et de jouer à plusieurs en local.</span> <br> <br>
                         <div class="suites" id="suite24">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/frontoffice_quizz.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/frontoffice_quizz.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, Twig, Bootstrap, JavaScript, PHP, MySQL, WebSocket, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à séparer un projet en 2 projets distincts (Front Office & Back Office). J'ai également appris à mettre en oeuvre des WebSocket 
                                 permettant de faire du Multipage. C'est ce qui permet, dans notre cas, à plusieurs joueurs de jouer ensemble en local.</span> <br> <br>
@@ -341,7 +368,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Réalisation de la partie Back Office du Quizz permettant de gérer les utilisateurs, les questions et les réponses.</span> <br> <br>
                         <div class="suites" id="suite23">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/backoffice_quizz.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/backoffice_quizz.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Twig, Bootstrap, JavaScript, PHP, MySQL, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Comprendre la logique des Frameworks Back-End dans la réalisation d'un mini Framework faisant office de back pour notre Quizz.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i><i class="fa fa-user"></i></span> <br>
@@ -361,7 +388,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Réalisation d'un Pokédex regroupant les 151 premiers Pokémons.</span> <br> <br>
                         <div class="suites" id="suite22">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/pokedex.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/pokedex.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, Sass, JavaScript, API, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à travailler à plusieurs sur un même projet en utilisant les différents outils proposés par GitLab, tout en s'améliorant en JavaScript.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i><i class="fa fa-user"></i></span> <br>
@@ -381,7 +408,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Réalisation de plusieurs petits projets indépendants en JavaScript.</span> <br> <br>
                         <div class="suites" id="suite21">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/fonctionnalites_js.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/fonctionnalites_js.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS, JavaScript, TypeScript, API, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à utiliser le langage JavaScript ainsi que toutes ses spécificités dans la réalisation de plusieurs petits projets faisant appel à des librairies JavaScript.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -401,7 +428,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Développer une application Web sous forme d'un portfolio regroupant plusieurs petits projets.</span> <br> <br>
                         <div class="suites" id="suite20">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/portfolio_less.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/portfolio_less.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, Less</span> <br> <br>
                             <span><b>Compétences visées :</b> Apprendre à réaliser plusieurs effets en Less, permettant de grandement dynamiser des pages Web statiques.</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
@@ -422,13 +449,13 @@
                         <span><b>Objectif du projet :</b> Conception d’une application web permettant d’automatiser la transposition d’un document de type « CV d’un candidat » 
                             vers un document formalisé de type « Dossier de Compétences ».</span> <br> <br>
                         <div class="suites" id="suite19">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/stage_dut.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/stage_dut.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS, JavaScript, PHP, MySQL</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir mettre en oeuvre les différentes compétences et techniques de programmation apprises lors de mes études de DUT Informatique, dans la réalisation d'un stage d'une durée de 10 semaines.</span><br><br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i></span> <br>
                             <span><b><i class="fa fa-hourglass-half"></i> Durée :</b> 10 semaines</span> <br>
                             <span><b><i class="fas fa-edit"></i> Note obtenue :</b> 17/20</span> <br>
-                            <span><a onClick="Javascript:window.open('https://maxhwk.github.io/public/assets/doc/Rapport_Stage_DUT_GIRON_Maxence.pdf');" class="rapport-stage-dut"><i class="far fa-file-pdf"></i> <b>Accéder à mon Rapport de Stage</b> </a></span>
+                            <span><a onClick="Javascript:window.open('./public/assets/doc/Rapport_Stage_DUT_GIRON_Maxence.pdf');" class="rapport-stage-dut"><i class="far fa-file-pdf"></i> <b>Accéder à mon Rapport de Stage</b> </a></span>
                         </div>
                     </div>
 
@@ -443,7 +470,7 @@
                         <span><b>Objectif du projet :</b> Développer une interface web à l'aide du Framework Flask permettant de consulter des vidéos enregistrées et pouvoir 
                                 aussi consulter ce que la caméra filme en temps réel.</span> <br> <br>
                         <div class="suites" id="suite18">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/camera.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/camera.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Flask, Docker, Raspberry Pi</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir mettre en oeuvre les techniques de programmation Web
                                 dans le cadre de la réalisation d'une interface Web en utilisant le Framework Flask pour un système 
@@ -466,7 +493,7 @@
                         <span><b>Objectif du projet :</b> Développer un site web dynamique permettant de se 
                             connecter ainsi que de pouvoir rédiger, modifier et supprimer des articles à l'aide du Framework Symfony.</span> <br> <br>
                         <div class="suites" id="suite17">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/redaction_articles.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/redaction_articles.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Symfony, MySQL</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir mettre en oeuvre les techniques de programmation Web
                                 dans le cadre de la réalisation d'un Site Web Dynamique ainsi qu'apprendre à programmer en utilisant un Framework tel que Symfony.</span> <br> <br>
@@ -488,7 +515,7 @@
                         <span><b>Objectif du projet :</b> Développer un site web dynamique permettant de se 
                             connecter ainsi que de pouvoir rédiger des articles.</span> <br> <br>
                         <div class="suites" id="suite16">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/articles.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/articles.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS, JavaScript, PHP, MySQL</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir mettre en oeuvre les techniques de programmation WEB 
                                 dans le cadre de la réalisation d'un site Web dynamique.</span> <br> <br>
@@ -509,7 +536,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Mise en oeuvre des méthodes de conduite de projet.</span> <br> <br>
                         <div class="suites" id="suite15">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/site_iutmetz.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/site_iutmetz.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS</span> <br> <br>
                             <span><b>Compétences visées :</b> Mise en pratique de la méthodologie de
                                 conduite de projets. <br> Développement des compétences d’autonomie et d’initiative de l’étudiant. <br> 
@@ -532,7 +559,7 @@
                         <span><b>Objectif du projet :</b> Développement des compétences 
                             relationnelles et l’autonomie dans le travail.</span> <br> <br>
                         <div class="suites" id="suite14">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/site_histinfo.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/site_histinfo.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS</span> <br> <br>
                             <span><b>Compétences visées :</b> Aptitudes à synthétiser l’information écrite 
                                 et sa présentation orale. <br> Maitrise de la recherche documentaire. <br>
@@ -554,7 +581,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Mise en oeuvre des méthodes de conduite de projet.</span> <br> <br>
                         <div class="suites" id="suite13">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/site_portes.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/site_portes.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS</span> <br> <br>
                             <span><b>Compétences visées :</b> Mise en pratique de la méthodologie de
                                 conduite de projets. <br> Développement des compétences d’autonomie et d’initiative de l’étudiant. <br> 
@@ -577,7 +604,7 @@
                         <span><b>Objectif du projet :</b> Développement des compétences 
                             relationnelles et l’autonomie dans le travail.</span> <br> <br>
                         <div class="suites" id="suite12">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/site_nature.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/site_nature.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> HTML, CSS</span> <br> <br>
                             <span><b>Compétences visées :</b> Aptitudes à synthétiser l’information écrite 
                                 et sa présentation orale. <br> Maitrise de la recherche documentaire. <br>
@@ -602,7 +629,7 @@
                         <span><b>Objectif du projet :</b> Développer un serveur de jeux permettant de jouer à 3 différents jeux aussi bien contre
                         un joueur connecté lui aussi au serveur ou contre une intelligence artificielle.</span> <br> <br>
                         <div class="suites" id="suite11">
-                            <img class="petite-img" src="https://maxhwk.github.io/public/assets/img/serveur_jeux.png" alt="" /> <br> <br>
+                            <img class="petite-img" src="./public/assets/img/serveur_jeux.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Java (RMI, JavaFX, Serialization)</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir mettre en oeuvre les techniques de programmation vues en cours
                                 dans le cadre de la réalisation d'un Serveur de Jeux en Réseau, en créant ici, un projet Serveur et un projet Client.</span> <br> <br>
@@ -626,7 +653,7 @@
                         <span><b>Objectif du projet :</b> Proposer un serveur permettant à plusieurs clients 
                             de se connecter et de pouvoir acheter des billets de concert.</span> <br> <br>
                         <div class="suites" id="suite10">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/concert.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/concert.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> C (parallélisme)</span> <br> <br>
                             <span><b>Compétences visées :</b> Programmation Système (thread, mutex, socket, signaux ...)</span> <br> <br>
                             <span><b><i class="fa fa-users"></i> Nombre d'étudiants :</b> <i class="fa fa-user"></i><i class="fa fa-user"></i></span> <br>
@@ -647,7 +674,7 @@
                         <span><b>Objectif du projet :</b> Développer un logiciel en suivant les préceptes de 
                             l'agilité et mettant en oeuvre un ensemble de bonnes pratiques.</span> <br> <br>
                         <div class="suites" id="suite9">
-                            <img class="petite-img" src="https://maxhwk.github.io/public/assets/img/pulls.png" alt="" /> <br> <br>
+                            <img class="petite-img" src="./public/assets/img/pulls.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Java, JavaFX, JUnit, MySQL, Git</span> <br> <br>
                             <span><b>Compétences visées :</b> Programmation événementielle, JDBC, Design Pattern DAO, 
                                 architecture MVC, tests unitaires.</span> <br> <br>
@@ -669,7 +696,7 @@
                         <span><b>Objectif du projet :</b> Créer une application de gestion de la scolarité 
                             avec une base de données.</span> <br> <br>
                         <div class="suites" id="suite8">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/gestion_scolarite.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/gestion_scolarite.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Free Pascal (Lazarus)</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir agencer une interface de façon ergonomique, 
                                 utiliser de façon fonctionnelle une base de données distante dans une application.</span> <br> <br>
@@ -691,7 +718,7 @@
                         <span><b>Objectif du projet :</b> Modélisation complète d'un problème avec UML 
                             et sa mise en oeuvre en Java.</span> <br> <br>
                         <div class="suites" id="suite7">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/videotheque.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/videotheque.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Java</span> <br> <br>
                             <span><b>Compétences visées :</b> Programmation par objet, UML, Langage Java 
                                 ( classe, héritage, gestion d'une interface graphique complète et gestion des événements graphiques..etc) </span> <br> <br>
@@ -712,7 +739,7 @@
                         </a>
                         <span><b>Objectif du projet :</b> Réaliser un petit jeu au choix sur le thème du coronavirus.</span> <br> <br>
                         <div class="suites" id="suite6">
-                            <img class="petite-img" src="https://maxhwk.github.io/public/assets/img/snake.png" alt="" /> <br> <br>
+                            <img class="petite-img" src="./public/assets/img/snake.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Assembleur x86</span> <br> <br>
                             <span><b>Compétences visées :</b> Comprendre la logique de développement sur un langage de programmation 
                                 plus trop utilisé de nos jours.</span> <br> <br>
@@ -734,7 +761,7 @@
                         <span><b>Objectif du projet :</b> Mise en application des acquis 
                             dans le domaine de l'analyse et de la programmation dans un travail de groupe.</span> <br> <br>
                         <div class="suites" id="suite5">
-                            <img class="petite-img" src="https://maxhwk.github.io/public/assets/img/nim.png" alt="" /> <br> <br>
+                            <img class="petite-img" src="./public/assets/img/nim.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> C</span> <br> <br>
                             <span><b>Compétences visées :</b> Maîtriser les concepts de 
                                 l'algorithmique et de la programmation.</span> <br> <br>
@@ -756,7 +783,7 @@
                         <span><b>Objectif du projet :</b> Créer une application de gestion des interventions 
                             avec une base de données.</span> <br> <br>
                         <div class="suites" id="suite4">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/gestion_intervention.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/gestion_intervention.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Free Pascal (Lazarus)</span> <br> <br>
                             <span><b>Compétences visées :</b> Savoir agencer une interface de façon ergonomique, 
                                 utiliser de façon fonctionnelle une base de données distante dans une application.</span> <br> <br>
@@ -778,7 +805,7 @@
                         <span><b>Objectif du projet :</b> Modélisation complète d'un problème avec UML 
                             et sa mise en oeuvre en Java.</span> <br> <br>
                         <div class="suites" id="suite3">
-                            <img class="grande-img" src="https://maxhwk.github.io/public/assets/img/dessin_assiste.png" alt="" /> <br> <br>
+                            <img class="grande-img" src="./public/assets/img/dessin_assiste.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Java</span> <br> <br>
                             <span><b>Compétences visées :</b> Programmation par objet, UML, Langage Java 
                                 ( classe, héritage, gestion d'une interface graphique complète et gestion des événements graphiques..etc) </span> <br> <br>
@@ -800,7 +827,7 @@
                         <span><b>Objectif du projet :</b> Réaliser une calculatrice avec les différentes
                             opérations de base.</span> <br> <br>
                         <div class="suites" id="suite2">
-                            <img class="petite-img" src="https://maxhwk.github.io/public/assets/img/calculatrice.png" alt="" /> <br> <br>
+                            <img class="petite-img" src="./public/assets/img/calculatrice.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> Assembleur x86</span> <br> <br>
                             <span><b>Compétences visées :</b> Comprendre la logique de développement sur un langage de programmation
                                 plus trop utilisé de nos jours.</span> <br> <br>
@@ -822,7 +849,7 @@
                         <span><b>Objectif du projet :</b> Mise en application des acquis 
                             dans le domaine de l'analyse et de la programmation dans un travail de groupe.</span> <br> <br>
                         <div class="suites" id="suite1">
-                            <img class="petite-img" src="https://maxhwk.github.io/public/assets/img/sudoku.png" alt="" /> <br> <br>
+                            <img class="petite-img" src="./public/assets/img/sudoku.png" alt="" /> <br> <br>
                             <span><b>Technologies utilisées :</b> C</span> <br> <br>
                             <span><b>Compétences visées :</b> Maîtriser les concepts de 
                                 l'algorithmique et de la programmation.</span> <br> <br>
@@ -1196,10 +1223,10 @@
                 <button class="btn-developed" onClick="Javascript:window.open('https://github.com/MaxHwK');"><i class="fa fa-github fa-shake" style="--fa-animation-duration: 5s;"></i> MaxHwK - 2022 </button>
                 <button class="btn-license" onClick="Javascript:window.open('https://github.com/MaxHwK/MaxHwK.github.io/blob/main/LICENSE');"><i class="fas fa-file-alt fa-shake" style="--fa-animation-duration: 5s; --fa-animation-delay: 2.5s;"></i> MIT License </button>
             </footer>
-
         </div>
     </div>
 
+    <script src="https://kit.fontawesome.com/38d5120454.js" crossorigin="anonymous"></script>
     <script src="public/js/script.js "></script>
 
 </body>
