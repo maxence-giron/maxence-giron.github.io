@@ -641,42 +641,22 @@ footer .fab {
     cursor: pointer;
 }
 
-.btn-ftawesome {
+.btn-ftawesome, .btn-license {
     border-color: #563d7c;
     color: #563d7c;
 }
 
-.btn-iconeseight {
-    border-color: #008f1f;
-    color: #008f1f;
-}
-
-.btn-developed {
+.btn-developed, .btn-iconeseight {
     border-color: #2e4049;
     color: #2e4049;
 }
 
-.btn-license {
-    border-color: #FF6347;
-    color: #FF6347;
-}
-
-.btn-ftawesome:hover {
+.btn-ftawesome:hover, .btn-license:hover {
     background-color: #563d7c;
     color: #fff;
 }
 
-.btn-iconeseight:hover {
-    background-color: #008f1f;
-    color: #fff;
-}
-
-.btn-developed:hover {
+.btn-developed:hover, .btn-iconeseight:hover {
     background-color: #2e4049;
-    color: #fff;
-}
-
-.btn-license:hover {
-    background-color: #FF6347;
     color: #fff;
 }
