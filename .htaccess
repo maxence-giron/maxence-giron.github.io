@@ -1,6 +1,0 @@
-location ~* \.(gif|jpg|jpeg|pdf|txt|css|js|png|webp|ico|xml|xml|gz)$ {
-access_log  off;
- expires max;
- add_header  Last-Modified: $date_gmt;
-        add_header  Cache-Control  private;
-}
