@@ -111,7 +111,7 @@ p {
 }
 
 .barre-gauche .photo_profil {
-    width: 100%;
+    width: 98%;
     margin-left: 0px;
     margin-bottom: 15px;
     border-radius: 50%;
@@ -229,45 +229,9 @@ li a:hover {
     margin-bottom: 0;
 }
 
-.barre-gauche .atouts-list {
-    margin-bottom: 0;
-}
-
-.barre-gauche .atouts-list li {
-    margin-bottom: 10px;
-}
-
-.barre-gauche .atouts-list li:last-child {
-    margin-bottom: 0;
-}
-
-.barre-gauche .interets-list .fa {
-    margin-right: 8px;
-    font-size: 16px;
-    vertical-align: middle;
-}
-
-.barre-gauche .interets-list {
-    margin-bottom: 0;
-}
-
-.barre-gauche .interets-list li {
-    margin-bottom: 10px;
-}
-
-.barre-gauche .interets-list li:last-child {
-    margin-bottom: 0;
-}
-
-.barre-gauche .langues-list .fas,
-.barre-gauche .atouts-list .fas,
-.barre-gauche .interets-list .fas {
+.barre-gauche .langues-list .fas {
     width: 12px;
     vertical-align: middle;
-}
-
-.barre-gauche .interets-list .fa {
-    margin-left: 4px;
 }
 
 .principal {
