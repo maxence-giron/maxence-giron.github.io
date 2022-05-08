@@ -1,5 +1,6 @@
 User-agent: Googlebot
 Disallow: /nogooglebot/
 
+Sitemap: http://maxhwk.github.io/sitemap.xml
 User-agent: * 
 Allow: /
