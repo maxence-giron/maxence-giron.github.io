@@ -134,7 +134,8 @@ p {
 }
 
 .barre-gauche .photo_profil {
-    width: 98%;
+    width: 100%;
+    height: 30%;
     margin-left: 0;
     margin-bottom: 15px;
     border-radius: 50%;
@@ -263,11 +264,6 @@ li a:hover {
     border-radius: 30px
 }
 
-.align-slider {
-    margin-left: 5px;
-    vertical-align: -8px
-}
-
 .principal .titre-section,
 .principal .titre-section-prj {
     text-transform: uppercase;
@@ -281,7 +277,8 @@ li a:hover {
 }
 
 .principal .projet-orange .fas,
-.principal .titre-section .fas,
+.principal .titre-section .fas, 
+.principal .titre-section .fab,
 .principal .titre-section-prj .fas {
     width: 30px;
     height: 30px;
