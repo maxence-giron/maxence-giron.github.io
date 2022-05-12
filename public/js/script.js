@@ -1,9 +1,9 @@
 function displayDiv(id) {
+    let div = document.getElementById(id);
 
-    if (document.getElementById(id).style.display == 'none') {
-        document.getElementById(id).style.display = 'block';
-
+    if (div.style.display == 'none') {
+        div.style.display = 'block';
     } else {
-        document.getElementById(id).style.display = 'none';
+        div.style.display = 'none';
     }
 }
