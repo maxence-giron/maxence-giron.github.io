@@ -26,7 +26,7 @@
     --radius-12: 12px;
 }
 
-body.dark_theme {
+body.dark {
     --bg-primary: hsl(0, 0%, 12%);
     --bg-secondary: hsl(0, 0%, 19%);
     --color-primary: hsl(0, 0%, 100%);
@@ -36,7 +36,7 @@ body.dark_theme {
     --shadow-1: 10px 10px 40px var(--card-shadow);
 }
 
-body.light_theme {
+body.light {
     --bg-primary: hsl(0, 0%, 90%);
     --bg-secondary: hsl(0, 0%, 100%);
     --color-primary: hsl(0, 0%, 12%);
