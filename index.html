@@ -671,7 +671,7 @@
                     </ul>
                 </div>
 
-                <form action="" class="contact-form">
+                <form class="contact-form">
                     <div class="form-wrapper">
                         <label for="name" class="form-label">Nom</label>
                         <div class="input-wrapper">
@@ -681,18 +681,18 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="phone" class="form-label">Téléphone (facultatif)</label>
                         <div class="input-wrapper">
-                            <input type="email" name="email" id="email" required placeholder="john.doe@mail.com" class="input-field">
-                            <ion-icon name="mail"></ion-icon>
+                            <input type="tel" name="phone" id="phone" placeholder="06 07 08 09 10" class="input-field">
+                            <ion-icon name="call"></ion-icon>
                         </div>
                     </div>
 
                     <div class="form-wrapper">
-                        <label for="phone" class="form-label">Téléphone</label>
+                        <label for="subject" class="form-label">Objet</label>
                         <div class="input-wrapper">
-                            <input type="tel" name="phone" id="phone" placeholder="06 07 08 09 10" class="input-field">
-                            <ion-icon name="call"></ion-icon>
+                            <input type="text" name="subject" id="subject" required placeholder="Objet de votre message" class="input-field">
+                            <ion-icon name="mail"></ion-icon>
                         </div>
                     </div>
 
@@ -704,7 +704,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Envoyer &nbsp;<i class="far fa-paper-plane"></i></button>
+                    <button type="submit" id="sendMail" class="btn btn-primary">Envoyer &nbsp;<i class="far fa-paper-plane"></i></button>
                 </form>
             </section>
         </article>
