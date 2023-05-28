@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 /**
  * TOGGLE
@@ -88,3 +88,23 @@ if (localStorage.getItem('theme') === 'light') {
     document.body.classList.remove('light')
     document.body.classList.add('dark')
 }
+
+/**
+ * SEND MAIL
+ */
+const sendMail = document.getElementById('sendMail')
+const name = document.getElementById('name').value
+const phone = document.getElementById('phone').value
+const subject = document.getElementById('subject').value
+const message = document.getElementById('message').value
+
+const template = 'Ce message a été envoyé par Mme. / M. ' + name + '(' + phone + ') <br>'
+    + 'Le message est le suivant : <br>' + message
+
+sendMail.addEventListener('click', function () {
+    if (name === '' || subject === '' || message === '') {
+        alert('Veuillez remplir tous les champs obligatoires avant d\'envoyer votre message.')
+    } else {
+        window.location.href = `mailto:gironmaxence.pro@gmail.com?subject=${subject}&body=${template}`
+    }
+})
