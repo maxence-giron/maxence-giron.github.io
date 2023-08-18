@@ -93,18 +93,24 @@ if (localStorage.getItem('theme') === 'light') {
  * SEND MAIL
  */
 const sendMail = document.getElementById('sendMail')
-const name = document.getElementById('name').value
-const phone = document.getElementById('phone').value
-const subject = document.getElementById('subject').value
-const message = document.getElementById('message').value
-
-const template = 'Ce message a été envoyé par Mme. / M. ' + name + '(' + phone + ') <br>'
-    + 'Le message est le suivant : <br>' + message
 
 sendMail.addEventListener('click', function () {
-    if (name === '' || subject === '' || message === '') {
-        alert('Veuillez remplir tous les champs obligatoires avant d\'envoyer votre message.')
+    const name = document.getElementById('name').value
+    const phone = document.getElementById('phone').value
+    const subject = document.getElementById('subject').value
+    const message = document.getElementById('message').value
+
+    let template = 'Ce message a été envoyé par Mme. / M. ' + name
+    if (phone) template += ' | ' + phone
+    template += '\n\nLe message est le suivant : \n\n' + message
+
+    if (name && subject && message) {
+        const mailtoLink = `mailto:gironmaxence.pro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(template)}`
+        window.location.href = mailtoLink
+
+        window.location.href = '/'
+        alert('Merci pour votre message.')
     } else {
-        window.location.href = `mailto:gironmaxence.pro@gmail.com?subject=${subject}&body=${template}`
+        alert('Veuillez remplir les champs requis avant d\'envoyer votre message.')
     }
 })
