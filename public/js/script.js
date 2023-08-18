@@ -108,8 +108,8 @@ sendMail.addEventListener('click', function () {
         const mailtoLink = `mailto:gironmaxence.pro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(template)}`
         window.location.href = mailtoLink
 
-        window.location.href = '/'
         alert('Merci pour votre message.')
+        window.location.href = 'https://maxhwk.github.io'
     } else {
         alert('Veuillez remplir les champs requis avant d\'envoyer votre message.')
     }
