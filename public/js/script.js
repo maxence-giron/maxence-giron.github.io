@@ -114,3 +114,16 @@ sendMail.addEventListener('click', function () {
         alert('Veuillez remplir les champs requis avant d\'envoyer votre message.')
     }
 })
+
+/**
+ * GET EXPERIENCE / CURRENT YEAR
+ */
+const currentDate = new Date()
+const firstDayOfWork = new Date('2022-08-01')
+
+const experience = Math.ceil((currentDate - firstDayOfWork) / (365.25 * 24 * 60 * 60 * 1000))
+const yearsExperience = document.getElementById('yearsExperience')
+yearsExperience.textContent = experience.toString()
+
+const currentYear = document.getElementById('currentYear')
+currentYear.textContent = currentDate.getFullYear().toString()
