@@ -452,6 +452,10 @@ main {
     margin-bottom: 40px;
 }
 
+.hero-title, .hero-contact {
+    color: var(--color-primary);
+}
+
 .hero-subtitle {
     font-size: 1.7rem;
     color: var(--raw-seinna);
@@ -528,8 +532,12 @@ main {
     margin-bottom: 80px;
 }
 
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
 .about .btn {
-    max-width: unset;
     width: 100%;
 }
 
@@ -1035,16 +1043,7 @@ textarea.input-field {
     }
 
     .hero-content {
-        --color-primary: var(--white);
         position: absolute;
-    }
-
-    .hero-title, .hero-contact {
-        filter: drop-shadow(2px 4px 10px var(--black));
-    }
-
-    .hero .btn-primary:is(:hover, :focus) {
-        color: hsl(0, 0%, 12%);
     }
 
     .hero-social-list {
