@@ -121,9 +121,9 @@ sendMail.addEventListener('click', function () {
 const currentDate = new Date()
 const firstDayOfWork = new Date('2022-08-01')
 
-const experience = Math.ceil((currentDate - firstDayOfWork) / (365.25 * 24 * 60 * 60 * 1000))
+const experience = Math.floor((currentDate - firstDayOfWork) / (365.25 * 24 * 60 * 60 * 1000))
 const yearsExperience = document.getElementById('yearsExperience')
-yearsExperience.textContent = experience.toString()
+yearsExperience.textContent = '+' + experience.toString()
 
 const currentYear = document.getElementById('currentYear')
 currentYear.textContent = currentDate.getFullYear().toString()
