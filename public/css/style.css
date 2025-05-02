@@ -527,9 +527,13 @@ main {
 }
 
 .about-banner {
-    max-width: 400px;
+    max-width: 350px;
     margin-inline: auto;
     margin-bottom: 80px;
+}
+
+.about-banner img {
+    border-radius: 50%;
 }
 
 .btn-group {
@@ -1122,7 +1126,7 @@ textarea.input-field {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 30px;
+        gap: 50px;
     }
 
     .about-banner {
@@ -1198,9 +1202,5 @@ textarea.input-field {
 
     .scroll-down {
         right: -80px;
-    }
-
-    .about-banner {
-        max-width: 450px;
     }
 }
