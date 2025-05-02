@@ -492,16 +492,17 @@ main {
 
 .stats-card .card-icon {
     background: var(--raw-seinna);
+    color: var(--color-primary);
     width: 60px;
     height: 60px;
     display: grid;
     place-items: center;
     border-radius: 50%;
+    font-size: 35px;
 }
 
-.stats-card .card-icon img {
-    width: 70%;
-    filter: invert(1);
+.stats-card .card-icon .fa-code {
+    font-size: 28px;
 }
 
 .stats-card .card-title {
@@ -529,7 +530,7 @@ main {
 .about-banner {
     max-width: 350px;
     margin-inline: auto;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .about-banner img {
@@ -1173,6 +1174,7 @@ textarea.input-field {
     }
 
     .contact-list {
+        margin-top: 60px;
         margin-left: -40px;
     }
 
