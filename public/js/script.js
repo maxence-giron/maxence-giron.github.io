@@ -96,19 +96,17 @@ const sendMail = document.getElementById('sendMail')
 
 sendMail.addEventListener('click', function () {
     const name = document.getElementById('name').value
-    const phone = document.getElementById('phone').value
     const subject = document.getElementById('subject').value
     const message = document.getElementById('message').value
 
     let template = 'Ce message a été envoyé par Mme. / M. ' + name
-    if (phone) template += ' | ' + phone
     template += '\n\nLe message est le suivant : \n\n' + message
 
     if (name && subject && message) {
-        const mailtoLink = `mailto:gironmaxence.pro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(template)}`
+        const mailtoLink = `mailto:maxence.giron@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(template)}`
         window.location.href = mailtoLink
 
-        window.location.href = 'https://maxhwk.github.io'
+        window.location.href = 'https://maxence-giron.github.io'
         alert('Merci pour votre message.')
     } else {
         alert('Veuillez remplir les champs requis avant d\'envoyer votre message.')
