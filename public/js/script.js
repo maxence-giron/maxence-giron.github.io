@@ -1,127 +1,98 @@
 'use strict'
 
 /**
- * TOGGLE
+ * Toggle helper
  */
-const elemToggleFunc = function (elem) {
-    elem.classList.toggle('active')
-}
+const toggleClass = (elem, className = 'active') => elem.classList.toggle(className)
 
 /**
- * GO TO TOP
- */
-const header = document.querySelector('[data-header]')
-const goTopBtn = document.querySelector('[data-go-top]')
-
-window.addEventListener('scroll', function () {
-    if (window.scrollY >= 10) {
-        header.classList.add('active')
-        goTopBtn.classList.add('active')
-    } else {
-        header.classList.remove('active')
-        goTopBtn.classList.remove('active')
-    }
-})
-
-/**
- * NAVBAR TOGGLE
+ * Navbar toggle
  */
 const navToggleBtn = document.querySelector('[data-nav-toggle-btn]')
 const navbar = document.querySelector('[data-navbar]')
 
-navToggleBtn.addEventListener('click', function () {
-    elemToggleFunc(navToggleBtn)
-    elemToggleFunc(navbar)
-    elemToggleFunc(document.body)
-})
+const toggleNavbar = () => {
+    toggleClass(navToggleBtn)
+    toggleClass(navbar)
+    toggleClass(document.body)
+}
 
-navbar.addEventListener('click', function () {
-    elemToggleFunc(navToggleBtn)
-    elemToggleFunc(navbar)
-    elemToggleFunc(document.body)
-})
+navToggleBtn.addEventListener('click', toggleNavbar)
+navbar.addEventListener('click', toggleNavbar)
 
 /**
- * SKILLS TOGGLE
+ * Theme toggle
+ */
+const themeToggleBtn = document.querySelector('[data-theme-btn]')
+
+const applyTheme = (theme) => {
+    document.body.classList.remove('light', 'dark')
+    document.body.classList.add(theme)
+    localStorage.setItem('theme', theme)
+    themeToggleBtn.classList.toggle('active', theme === 'light')
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    const newTheme = themeToggleBtn.classList.contains('active') ? 'dark' : 'light'
+    applyTheme(newTheme)
+})
+
+const storedTheme = localStorage.getItem('theme') || 'dark'
+applyTheme(storedTheme)
+
+/**
+ * Skills toggle
  */
 const toggleBtnBox = document.querySelector('[data-toggle-box]')
 const toggleBtns = document.querySelectorAll('[data-toggle-btn]')
 const skillsBox = document.querySelector('[data-skills-box]')
 
-for (let i = 0; i < toggleBtns.length; i++) {
-    toggleBtns[i].addEventListener('click', function () {
-        elemToggleFunc(toggleBtnBox)
-        for (let i = 0; i < toggleBtns.length; i++) {
-            elemToggleFunc(toggleBtns[i])
-        }
-        elemToggleFunc(skillsBox)
+toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        toggleClass(toggleBtnBox)
+        toggleBtns.forEach(toggleClass)
+        toggleClass(skillsBox)
     })
-}
-
-/**
- * THEME TOGGLE
- */
-const themeToggleBtn = document.querySelector('[data-theme-btn]')
-
-themeToggleBtn.addEventListener('click', function () {
-    elemToggleFunc(themeToggleBtn)
-    if (themeToggleBtn.classList.contains('active')) {
-        document.body.classList.remove('dark')
-        document.body.classList.add('light')
-        localStorage.setItem('theme', 'light')
-    } else {
-        document.body.classList.add('dark')
-        document.body.classList.remove('light')
-        localStorage.setItem('theme', 'dark')
-    }
 })
 
 /**
- * CHECK THEME
+ * Go to top & sticky header
  */
-if (localStorage.getItem('theme') === 'light') {
-    themeToggleBtn.classList.add('active')
-    document.body.classList.remove('dark')
-    document.body.classList.add('light')
-} else {
-    themeToggleBtn.classList.remove('active')
-    document.body.classList.remove('light')
-    document.body.classList.add('dark')
-}
+const header = document.querySelector('[data-header]')
+const goTopBtn = document.querySelector('[data-go-top]')
 
-/**
- * SEND MAIL
- */
-const sendMail = document.getElementById('sendMail')
-
-sendMail.addEventListener('click', function () {
-    const name = document.getElementById('name').value
-    const subject = document.getElementById('subject').value
-    const message = document.getElementById('message').value
-
-    let template = 'Ce message a été envoyé par Mme. / M. ' + name
-    template += '\n\nLe message est le suivant : \n\n' + message
-
-    if (name && subject && message) {
-        const mailtoLink = `mailto:maxence.giron@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(template)}`
-        window.location.href = mailtoLink
-
-        window.location.href = 'https://maxence-giron.github.io'
-        alert('Merci pour votre message.')
-    } else {
-        alert('Veuillez remplir les champs requis avant d\'envoyer votre message.')
-    }
+window.addEventListener('scroll', () => {
+    const isScrolled = window.scrollY >= 10
+    header.classList.toggle('active', isScrolled)
+    goTopBtn.classList.toggle('active', isScrolled)
 })
 
 /**
- * GET EXPERIENCE / CURRENT YEAR
+ * Current year & experience
  */
 const currentDate = new Date()
 const firstDayOfWork = new Date('2022-08-01')
 
 const experience = Math.floor((currentDate - firstDayOfWork) / (365.25 * 24 * 60 * 60 * 1000))
-const yearsExperience = document.getElementById('yearsExperience')
-yearsExperience.textContent = '+' + experience.toString()
+document.getElementById('yearsExperience').textContent = `+${experience}`
+document.getElementById('currentYear').textContent = currentDate.getFullYear()
 
-const currentYear = document.getElementById('currentYear')
-currentYear.textContent = currentDate.getFullYear().toString()
+/**
+ * Send message
+ */
+const sendMailBtn = document.getElementById('sendMail')
+
+sendMailBtn.addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim()
+    const subject = document.getElementById('subject').value.trim()
+    const message = document.getElementById('message').value.trim()
+
+    if (!name || !subject || !message) {
+        alert("Veuillez remplir tous les champs avant d'envoyer votre message.")
+        return
+    }
+
+    const body = `Ce message a été envoyé par Mme. / M. ${name}\n\nLe message est le suivant :\n\n${message}`
+    const mailtoLink = `mailto:maxence.giron@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailtoLink
+})
