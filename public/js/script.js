@@ -75,6 +75,7 @@ const firstDayOfWork = new Date('2022-08-01')
 
 const experience = Math.floor((currentDate - firstDayOfWork) / (365.25 * 24 * 60 * 60 * 1000))
 document.getElementById('yearsExperience').textContent = `+${experience}`
+document.getElementById('nbProjects').textContent = `+${experience * 25}`
 document.getElementById('currentYear').textContent = currentDate.getFullYear()
 
 /**
