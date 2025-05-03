@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://maxence-giron.github.io">
     <link rel="shortcut icon" type="image/webp" href="./public/img/favicon.webp">
 
-    <title>Portfolio de Maxence Giron - Analyste Développeur Web - Luxembourg</title>
+    <title>Portfolio de Maxence Giron - Analyste Développeur Web</title>
     <meta name="description" content="Développeur web passionné, j'aime concevoir des projets concrets et relever des défis techniques. Curieux et polyvalent, je m'intéresse aussi bien au front-end qu'au back-end.">
 
     <link rel="stylesheet" href="public/css/style.css">
@@ -20,7 +20,7 @@
 
     <meta property="og:url" content="https://maxence-giron.github.io">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Portfolio de Maxence Giron - Analyste Développeur Web - Luxembourg">
+    <meta property="og:title" content="Portfolio de Maxence Giron - Analyste Développeur Web">
     <meta property="og:description" content="Développeur web passionné, j'aime concevoir des projets concrets et relever des défis techniques. Curieux et polyvalent, je m'intéresse aussi bien au front-end qu'au back-end.">
     <meta property="og:image" content="https://maxence-giron.github.io/public/img/Maxence_Giron_Analyste_Developpeur_Web.webp">
 </head>
@@ -114,7 +114,7 @@
                             <div class="card-icon">
                                 <i class="far fa-circle-check"></i>
                             </div>
-                            <h2 class="h2 card-title">+50 <strong>Projets réalisés</strong></h2>
+                            <h2 class="h2 card-title"><span id="nbProjects"></span> <strong>Projets réalisés</strong></h2>
                         </div>
                     </li>
 
@@ -562,13 +562,24 @@
             <section class="contact" id="contact">
                 <div class="contact-content section-content">
                     <p class="section-subtitle">Contact</p>
-                    <h2 class="h3 section-title">Me contacter</h2>
+                    <h2 class="h3 section-title">Get in touch</h2>
 
                     <p class="section-text">
                         Une question ou une remarque ? N'hésitez pas à me laisser un message, je vous répondrai dès que possible.
                     </p>
 
                     <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <div class="contact-item-icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+
+                            <div class="wrapper">
+                                <h3 class="h4 contact-item-title">Email</h3>
+                                <a href="mailto:maxence.giron@gmail.com" class="contact-info">maxence.giron@gmail.com</a>
+                            </div>
+                        </li>
+
                         <li class="contact-list-item">
                             <div class="contact-item-icon">
                                 <ion-icon name="call-outline"></ion-icon>
@@ -582,12 +593,12 @@
 
                         <li class="contact-list-item">
                             <div class="contact-item-icon">
-                                <ion-icon name="mail-outline"></ion-icon>
+                                <ion-icon name="location-outline"></ion-icon>
                             </div>
 
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Email</h3>
-                                <a href="mailto:maxence.giron@gmail.com" class="contact-info">maxence.giron@gmail.com</a>
+                                <h3 class="h4 contact-item-title">Localisation</h3>
+                                <span class="contact-info">Luxembourg</span>
                             </div>
                         </li>
 
@@ -668,7 +679,7 @@
         {
             "@context" : "http://schema.org",
             "@type" : "Organization",
-            "name" : "Portfolio de Maxence Giron - Analyste Développeur Web - Luxembourg",
+            "name" : "Portfolio de Maxence Giron - Analyste Développeur Web",
             "url" : "https://maxence-giron.github.io",
             "sameAs" : ["https://www.linkedin.com/in/maxence-giron"],
             "address": {
