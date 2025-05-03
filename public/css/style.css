@@ -752,7 +752,7 @@ main {
     transition: var(--transition-1);
 }
 
-.contact-info:not(address):is(:hover, :focus) {
+.contact-info:not(span):is(:hover, :focus) {
     color: var(--color-primary);
 }
 
